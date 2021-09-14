@@ -1,0 +1,11 @@
+const CREATE_TASK = 'CREATE_TASK'
+const READ_TASK = 'READ_TASK'
+const UPDATE_TASK = 'UPDATE_TASK'
+const DELETE_TASK = 'DELETE_TASK'
+
+export { 
+    CREATE_TASK,
+    READ_TASK,
+    UPDATE_TASK, 
+    DELETE_TASK 
+}

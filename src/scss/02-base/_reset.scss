@@ -1,0 +1,17 @@
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	user-select: none;
+}
+::-webkit-scrollbar {
+	width: 2px;
+}
+::-webkit-scrollbar-track {
+	background-color: lighten($cta-2, 20);
+}
+::-webkit-scrollbar-thumb {
+	background-color: $cta-2;
+}

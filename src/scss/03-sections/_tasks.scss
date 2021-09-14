@@ -1,0 +1,21 @@
+.tasks {
+    grid-area: tasks;
+    overflow-y: auto;
+    overflow-x: hidden;
+    position: relative;
+    transition: transform $transition;
+
+    &__list {
+        margin-top: calc(var(--blur) * -1);
+        padding-top: calc(var(--grid-gap) / 2);
+        padding-bottom: var(--blur);
+    }
+    &__blur {
+        position: sticky;
+        top: calc(100% - var(--blur));
+        width: 100%;
+        height: var(--blur);
+        background-image: linear-gradient(to bottom, transparent, lighten($gray, 25));
+        backdrop-filter: blur(1px);
+    }
+}

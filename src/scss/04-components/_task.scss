@@ -1,0 +1,52 @@
+.task{
+    display: grid;
+    justify-items: start;
+    align-items: center;
+    grid-template-columns: auto 1fr auto;
+    grid-gap: var(--grid-gap);
+    padding: calc(var(--gap-v)/2.5) var(--gap-h);
+
+    border-left: 2px solid transparent;
+    transition: $transition;
+
+    &:hover{
+        border-left: 2px solid $cta-2;
+        transition: $transition;
+    }
+    &__schedule{
+        padding: 8px;
+        text-align: center;
+        font-size: .75rem;
+        letter-spacing: .5px;
+
+        color: $white;
+        background-color: $cta-2;
+    }
+    &__title{
+        width: 100%;
+        font-size: .875rem;
+        line-height: 1.6;
+        letter-spacing: .5px;
+        
+        color: $black;
+        cursor: pointer;
+    }
+    &__submit{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+        height: 25px;
+        
+        border-radius: 50%;
+        background-color: $black;
+        color: $cta-2;
+        cursor: pointer;
+        transition: $transition;
+
+        &:hover{
+            background-color: darken($black, 5);
+            transition: $transition;
+        }
+    }
+}

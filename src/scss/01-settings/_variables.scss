@@ -1,0 +1,33 @@
+$mq-1: 1250px;
+$mq-2: 1000px;
+$mq-3: 900px;
+$mq-4: 800px;
+$mq-5: 600px;
+
+:root{
+    --gap-v: 30px;
+    --gap-h: 30px;
+    --grid-gap: 30px;
+    --blur: 50px;
+
+    @media (max-width: $mq-1) {
+        --gap-v: 30px;
+        --gap-h: 30px;
+        --grid-gap: 25px;
+    }
+    @media (max-width: $mq-2) {
+        --gap-v: 20px;
+        --gap-h: 20px;
+        --grid-gap: 20px;
+    }
+}
+
+$bg: #c7c8ee;
+$black: #47405c;
+$white: #f3f4fb;
+$gray: #aeacb5;
+$cta-1: #e9717c;
+$cta-2: #77c1d0;
+$max-width: 1260px;
+$transition: 250ms ease;
+
